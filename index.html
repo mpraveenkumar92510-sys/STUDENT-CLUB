@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn, make, and meet your people at Campus Lab student workshops."
+    />
+    <meta name="theme-color" content="#f8f8ff" />
+    <title>Campus Lab — Student Workshops</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Campus Lab home"><span class="brand-mark">✳</span> campus<span class="wordmark-accent">lab</span></a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#workshops">Workshops</a>
+        <a class="nav-link" href="#schedule">Schedule</a>
+        <a class="nav-link" href="#register">Register</a>
+        <a class="nav-link nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> LEARN SOMETHING. MAKE SOMETHING.</p>
+          <h1 id="hero-title">A little more<br />curious. A lot more <span>capable.</span></h1>
+          <p class="hero-description">
+            Hands-on workshops for big ideas, new skills, and the people you haven’t met yet.
+            Come as you are; leave with something new.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#register">Find your workshop <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#workshops">See what’s on <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta">
+            <span>MADE FOR STUDENTS</span>
+            <span>OPEN TO EVERY DEPARTMENT</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of creative workshop supplies">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-sun"></div>
+          <div class="art-shape"></div>
+          <div class="art-card">
+            <span class="art-card-mark">✳</span>
+            <span>GOOD IDEAS<br />GROW TOGETHER</span>
+          </div>
+          <span class="art-caption">CURIOSITY LOOKS GOOD ON YOU</span>
+        </div>
+        <a class="scroll-cue" href="#workshops"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="countdown-section" aria-labelledby="countdown-title">
+        <div class="section-shell countdown-layout">
+          <div class="countdown-copy">
+            <p class="eyebrow">YOUR NEXT GOOD IDEA IS COMING UP</p>
+            <h2 id="countdown-title">Next up: Creative Coding Lab</h2>
+            <p>December 12, 2026 <span aria-hidden="true">·</span> Innovation Studio</p>
+          </div>
+          <div
+            class="countdown"
+            id="countdown"
+            data-countdown-date="2026-12-12T10:00:00"
+            aria-label="Countdown to Creative Coding Lab"
+            aria-live="off"
+          >
+            <div><strong id="countdown-days">--</strong><span>DAYS</span></div>
+            <div><strong id="countdown-hours">--</strong><span>HOURS</span></div>
+            <div><strong id="countdown-minutes">--</strong><span>MINUTES</span></div>
+            <div><strong id="countdown-seconds">--</strong><span>SECONDS</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-block workshops-section" id="workshops" aria-labelledby="workshops-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / PICK YOUR NEXT ADVENTURE</p>
+          <h2 id="workshops-title">Make room for <span>new skills.</span></h2>
+          <p class="heading-note">Small groups, friendly mentors, and plenty of time to try things out.</p>
+        </div>
+        <div class="workshop-grid">
+          <article class="workshop-card">
+            <div class="workshop-image image-code" role="img" aria-label="Laptop displaying colourful lines of code">
+              <span class="image-label">BUILD SOMETHING</span>
+              <span class="image-art code-art" aria-hidden="true">&lt; / &gt;</span>
+              <span class="card-badge">12 DEC</span>
+            </div>
+            <div class="workshop-details">
+              <p class="workshop-type">TECH · BEGINNER FRIENDLY</p>
+              <h3>Creative Coding Lab</h3>
+              <p>Turn a few lines of code into a playful web experience. No coding background needed.</p>
+              <div class="workshop-meta"><span>◷ Dec 12, 2026 · 10:00 AM</span><span>⌖ Innovation Studio</span></div>
+              <a class="card-link" href="#register" data-workshop="Creative Coding Lab">Save your seat <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="workshop-card">
+            <div class="workshop-image image-design" role="img" aria-label="Colourful design shapes arranged on a table">
+              <span class="image-label">THINK VISUALLY</span>
+              <span class="image-art design-art" aria-hidden="true">✳</span>
+              <span class="card-badge">19 DEC</span>
+            </div>
+            <div class="workshop-details">
+              <p class="workshop-type">DESIGN · ALL LEVELS</p>
+              <h3>Design Your First Portfolio</h3>
+              <p>Find your story, shape your projects, and make a portfolio that feels like you.</p>
+              <div class="workshop-meta"><span>◷ Dec 19, 2026 · 1:00 PM</span><span>⌖ Arts Building, Room 204</span></div>
+              <a class="card-link" href="#register" data-workshop="Design Your First Portfolio">Save your seat <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="workshop-card">
+            <div class="workshop-image image-speaking" role="img" aria-label="Microphone ready for a student presentation">
+              <span class="image-label">FIND YOUR VOICE</span>
+              <span class="image-art speaking-art" aria-hidden="true">◖</span>
+              <span class="card-badge">09 JAN</span>
+            </div>
+            <div class="workshop-details">
+              <p class="workshop-type">COMMUNICATION · ALL LEVELS</p>
+              <h3>Speak with Confidence</h3>
+              <p>Practice telling a great story, presenting your ideas, and feeling at home in the room.</p>
+              <div class="workshop-meta"><span>◷ Jan 9, 2027 · 11:00 AM</span><span>⌖ Student Union, Hall B</span></div>
+              <a class="card-link" href="#register" data-workshop="Speak with Confidence">Save your seat <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="workshop-card">
+            <div class="workshop-image image-systems" role="img" aria-label="A notebook filled with interface sketches">
+              <span class="image-label">NEW WORKSHOP</span>
+              <span class="image-art systems-art" aria-hidden="true">▦</span>
+              <span class="card-badge">16 JAN</span>
+            </div>
+            <div class="workshop-details">
+              <p class="workshop-type">DESIGN · HANDS-ON</p>
+              <h3>Design Systems Sprint</h3>
+              <p>Build a tidy set of reusable interface pieces and learn how good systems help teams create.</p>
+              <div class="workshop-meta"><span>◷ Jan 16, 2027 · 10:30 AM</span><span>⌖ Design Lab, Room 118</span></div>
+              <a class="card-link" href="#register" data-workshop="Design Systems Sprint">Save your seat <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="schedule-section" id="schedule" aria-labelledby="schedule-title">
+        <div class="section-shell section-block">
+          <div class="projects-heading">
+            <div class="section-heading">
+              <p class="eyebrow">02 / SAVE THE DATE</p>
+              <h2 id="schedule-title">The <span>schedule.</span></h2>
+              <p class="heading-note">A little planning, a lot of making. All times are local.</p>
+            </div>
+            <a class="text-link" href="#register">Join a session <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="schedule-table-wrap">
+            <table class="schedule-table">
+              <thead><tr><th scope="col">DATE</th><th scope="col">WORKSHOP</th><th scope="col">TIME</th><th scope="col">VENUE</th></tr></thead>
+              <tbody>
+                <tr><td>12 Dec 2026</td><td>Creative Coding Lab</td><td>10:00 AM – 12:00 PM</td><td>Innovation Studio</td></tr>
+                <tr><td>19 Dec 2026</td><td>Design Your First Portfolio</td><td>1:00 PM – 3:00 PM</td><td>Arts Building, Room 204</td></tr>
+                <tr><td>09 Jan 2027</td><td>Speak with Confidence</td><td>11:00 AM – 1:00 PM</td><td>Student Union, Hall B</td></tr>
+                <tr><td>16 Jan 2027</td><td>Design Systems Sprint <span class="new-label">NEW</span></td><td>10:30 AM – 12:30 PM</td><td>Design Lab, Room 118</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="register-section" id="register" aria-labelledby="register-title">
+        <div class="section-shell register-layout">
+          <div class="register-copy">
+            <p class="eyebrow">03 / YOUR SEAT IS WAITING</p>
+            <h2 id="register-title">Curiosity looks<br />good <span>on you.</span></h2>
+            <p>Pick a workshop and save your spot. We’ll see you there with everything you need to get started.</p>
+            <div class="register-note"><span aria-hidden="true">✳</span><p>Free to attend. Open to students from every department. Just bring yourself.</p></div>
+          </div>
+          <form class="register-form" id="registration-form" novalidate>
+            <div class="form-row">
+              <label for="name">YOUR NAME</label>
+              <input id="name" name="name" type="text" placeholder="Jane Smith" autocomplete="name" required />
+              <span class="field-error" id="name-error" aria-live="polite"></span>
+            </div>
+            <div class="form-row">
+              <label for="email">EMAIL ADDRESS</label>
+              <input id="email" name="email" type="email" placeholder="jane@college.edu" autocomplete="email" required />
+              <span class="field-error" id="email-error" aria-live="polite"></span>
+            </div>
+            <div class="form-row">
+              <label for="department">DEPARTMENT</label>
+              <select id="department" name="department" required>
+                <option value="">Choose your department</option>
+                <option>Arts &amp; Humanities</option>
+                <option>Business</option>
+                <option>Computer Science</option>
+                <option>Engineering</option>
+                <option>Science</option>
+                <option>Other</option>
+              </select>
+              <span class="field-error" id="department-error" aria-live="polite"></span>
+            </div>
+            <div class="form-row">
+              <label for="workshop">CHOOSE A WORKSHOP</label>
+              <select id="workshop" name="workshop" required>
+                <option value="">Choose a workshop</option>
+                <option>Creative Coding Lab</option>
+                <option>Design Your First Portfolio</option>
+                <option>Speak with Confidence</option>
+                <option>Design Systems Sprint</option>
+              </select>
+              <span class="field-error" id="workshop-error" aria-live="polite"></span>
+            </div>
+            <button class="button button-light" type="submit">Register for a workshop <span aria-hidden="true">↗</span></button>
+            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+            <p class="form-note">This demo form confirms your details on this page; it doesn’t send them to a server.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell" id="contact">
+      <a class="wordmark" href="#home" aria-label="Campus Lab, back to top"><span class="brand-mark">✳</span> campus<span class="wordmark-accent">lab</span></a>
+      <p>HAVE A QUESTION? <a href="mailto:workshops@campuslab.edu">workshops@campuslab.edu</a><br />STUDENT LIFE CENTRE · ROOM 12</p>
+      <a class="back-to-top" href="#home">BACK TO TOP ↑</a>
+    </footer>
+  </body>
+</html>
